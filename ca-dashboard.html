@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA Dashboard | Manage Consultations</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body class="bg-gray-50 flex">
+
+    <aside class="w-64 bg-blue-900 min-h-screen p-6 text-white hidden md:block">
+        <h2 class="text-xl font-bold mb-10">CA Expert Panel</h2>
+        <nav class="space-y-4">
+            <a href="#" class="block bg-blue-700 px-4 py-2 rounded-lg">Dashboard</a>
+            <a href="#" class="block px-4 py-2 hover:bg-blue-800 rounded-lg">My Queue</a>
+            <a href="#" class="block px-4 py-2 hover:bg-blue-800 rounded-lg">Earnings</a>
+            <a href="#" class="block px-4 py-2 hover:bg-blue-800 rounded-lg">Vault Access</a>
+        </nav>
+    </aside>
+
+    <main class="flex-1 p-8">
+        <div class="flex justify-between items-center mb-8">
+            <h1 class="text-2xl font-bold">Welcome back, CA Anjali</h1>
+            <div class="flex items-center gap-4">
+                <span class="bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-bold animate-pulse">● Available for Calls</span>
+                <img src="https://via.placeholder.com/40" class="rounded-full">
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <p class="text-gray-500 text-sm">Today's Earnings</p>
+                <p class="text-3xl font-bold text-blue-700">₹8,450</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <p class="text-gray-500 text-sm">Active Queue</p>
+                <p class="text-3xl font-bold text-orange-500">3 Clients</p>
+            </div>
+            <div class="bg-white p-6 rounded-2xl shadow-sm border border-gray-100">
+                <p class="text-gray-500 text-sm">Rating</p>
+                <p class="text-3xl font-bold text-green-600">4.9 / 5</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-2xl shadow-sm border border-gray-100 p-6">
+            <h3 class="text-lg font-bold mb-6">Virtual Lobby (Waiting)</h3>
+            <div class="overflow-x-auto">
+                <table class="w-full text-left">
+                    <thead>
+                        <tr class="text-gray-400 border-b">
+                            <th class="pb-4">Client Name</th>
+                            <th class="pb-4">Service Required</th>
+                            <th class="pb-4">Wait Time</th>
+                            <th class="pb-4">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y">
+                        <tr>
+                            <td class="py-4 font-medium">Rajesh Mehra (E-comm)</td>
+                            <td class="py-4"><span class="bg-purple-100 text-purple-700 px-2 py-1 rounded text-xs">GST Reconciliation</span></td>
+                            <td class="py-4 text-gray-500">4 mins</td>
+                            <td class="py-4">
+                                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold">Start Call</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="py-4 font-medium">Suresh V.</td>
+                            <td class="py-4"><span class="bg-red-100 text-red-700 px-2 py-1 rounded text-xs font-bold">GST Notice #442</span></td>
+                            <td class="py-4 text-gray-500">12 mins</td>
+                            <td class="py-4">
+                                <button class="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-bold">Start Call</button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

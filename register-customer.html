@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Sign Up | CA Marketplace</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-6">
+
+    <div class="max-w-md w-full bg-white rounded-3xl shadow-xl p-8 border border-gray-100">
+        <div class="text-center mb-8">
+            <h1 class="text-3xl font-bold text-blue-700">Get Expert Advice</h1>
+            <p class="text-gray-500 mt-2">Join 60M+ MSMEs simplifying their compliance.</p>
+        </div>
+
+        <form action="#" class="space-y-5">
+            <div>
+                <label class="block text-sm font-semibold mb-1 text-gray-700">Full Name</label>
+                <input type="text" placeholder="Your Name" class="w-full p-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition">
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold mb-1 text-gray-700">Mobile Number</label>
+                <input type="tel" placeholder="+91 XXXXX XXXXX" class="w-full p-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition">
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold mb-1 text-gray-700">I am a...</label>
+                <select class="w-full p-3 rounded-xl border border-gray-200 outline-none bg-white">
+                    <option>E-commerce Seller (Amazon/Flipkart)</option>
+                    <option>MSME / Small Business Owner</option>
+                    <option>Individual Taxpayer / Freelancer</option>
+                    <option>Startup Founder</option>
+                </select>
+            </div>
+
+            <div>
+                <label class="block text-sm font-semibold mb-1 text-gray-700">Create Password</label>
+                <input type="password" placeholder="••••••••" class="w-full p-3 rounded-xl border border-gray-200 focus:ring-2 focus:ring-blue-500 outline-none transition">
+            </div>
+
+            <div class="flex items-start gap-3 py-2">
+                <input type="checkbox" id="consent" class="mt-1 h-4 w-4 text-blue-600 border-gray-300 rounded">
+                <label for="consent" class="text-xs text-gray-500 leading-tight">
+                    I consent to the processing of my digital data for professional consultation as per the **DPDP Act 2023** guidelines. 
+                </label>
+            </div>
+
+            <button type="submit" class="w-full bg-blue-600 text-white py-4 rounded-xl font-bold text-lg hover:bg-blue-700 shadow-lg shadow-blue-100 transition">
+                Create Account
+            </button>
+        </form>
+
+        <p class="text-center text-sm text-gray-500 mt-6">
+            Already have an account? <a href="#" class="text-blue-600 font-bold">Login</a>
+        </p>
+    </div>
+
+</body>
+</html>
