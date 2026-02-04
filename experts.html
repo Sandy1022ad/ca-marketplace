@@ -103,4 +103,10 @@ function startPayment(serviceName, amount) {
     onclick="startPayment('GST Notice Resolution', 1499)" 
     class="bg-green-600 hover:bg-green-700 text-white px-6 py-2 rounded-lg font-bold">
     Pay & Connect
+
 </button>
+// Inside your startPayment handler function
+handler: function (response) {
+    // Redirect to Vault after successful payment
+    window.location.href = "vault.html?payment_id=" + response.razorpay_payment_id;
+}
